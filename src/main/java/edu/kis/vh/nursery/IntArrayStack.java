@@ -10,21 +10,21 @@ public class IntArrayStack {
 
 	private int total = empty_stack;
 
-	protected int getTotal()
+	public int getTotal()
 	{
 		return total;
 	}
 
-	protected void countIn(final int in) {
+	public void countIn(final int in) {
 		if (!isFull())
 			NUMBERS[++total] = in;
 	}
 
-	protected boolean callCheck() {
+	public boolean callCheck() {
 		return total == empty_stack;
 	}
 
-	protected boolean isFull() {
+	public boolean isFull() {
 		return total == full_stack;
 	}
 
@@ -34,7 +34,7 @@ public class IntArrayStack {
 		return NUMBERS[total];
 	}
 
-	protected int countOut() {
+	public int countOut() {
 		if (callCheck())
 			return empty_stack;
 		return NUMBERS[total--];
