@@ -10,7 +10,7 @@ public class DefaultCountingOutRhymer {
 
 	private int total = empty_stack;
 
-	public int getTotal()
+	protected int getTotal()
 	{
 		return total;
 	}
