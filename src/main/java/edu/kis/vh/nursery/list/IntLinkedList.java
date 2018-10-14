@@ -45,3 +45,13 @@ public class IntLinkedList {
 		return last;
 	}
 }
+
+class Node {
+
+	protected int value;
+	protected Node prev, next;
+
+	protected Node(final int i) {
+		value = i;
+	}
+}
